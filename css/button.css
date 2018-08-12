@@ -1,0 +1,60 @@
+button, .button {
+	position: relative;
+	display: inline-block;
+	background: #C6C6C6;
+	padding: 8px;
+	margin: 1px;
+	font-size: 16px;
+	color: #4C4C4C;
+	border-top: 2px solid #F7F7F7;
+	border-left: 2px solid #F7F7F7;
+	border-bottom: 2px solid #656465;
+	border-right: 2px solid #656465;
+	outline: 2px solid #131313;
+}
+
+button:not(:disabled):not(.disabled)::before, button:not(:disabled):not(.disabled)::after, .button:not(.disabled)::before, .button:not(.disabled)::after {
+	content: '';
+	position: absolute;
+	background: #C0BFC0;
+	width: 2px;
+	height: 2px;
+}
+
+button::before, .button::before {
+	top: -2px;
+	right: -2px;
+}
+
+button::after, .button::after {
+	bottom: -2px;
+	left: -2px;
+}
+
+button.selected, .button.selected {
+	background: #8B8B8B;
+	border-top-color: #5A5B5A;
+	border-left-color: #5A5B5A;
+	border-bottom-color: #DFDFDF;
+	border-right-color: #DFDFDF;
+}
+
+button:not(:disabled):not(.disabled):hover, .button:not(.disabled):hover {
+	background: #43A01C;
+	color: #FFFFFF;
+	border-top-color: #37D61E;
+	border-left-color: #37D61E;
+	border-bottom-color: #037300;
+	border-right-color: #037300;
+	outline: 2px solid #FFFFFF;
+}
+
+button:hover::before, button:hover::after, .button:hover::before, .button:hover::after {
+	background: #43A01C;
+}
+
+button:disabled, button.disabled, .button.disabled {
+	background: #757575;
+	border-color: #757575;
+	color: #B2B2B2;
+}
