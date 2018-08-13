@@ -1,0 +1,18 @@
+input {
+	background: #5E5E5E;
+	color: #FFFFFF;
+	border: 0;
+	border-top: 2px solid #464446;
+	border-bottom: 2px solid #B2B2B2;
+	outline: 2px solid #000000;
+	padding: 8px;
+	caret-color: #00FF00;
+}
+
+input::placeholder {
+	color: #7F7F7F;
+}
+
+input:hover {
+	outline-color: #FFFFFF;
+}
