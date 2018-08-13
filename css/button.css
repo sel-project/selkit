@@ -16,9 +16,12 @@ button, .button {
 button:not(:disabled):not(.disabled)::before, button:not(:disabled):not(.disabled)::after, .button:not(.disabled)::before, .button:not(.disabled)::after {
 	content: '';
 	position: absolute;
-	background: #C0BFC0;
 	width: 2px;
 	height: 2px;
+}
+
+button:not(.dark)::before, button:not(.dark)::after, .button:not(.dark)::before, .button:not(.dark)::after {
+	background: #C0BFC0;
 }
 
 button::before, .button::before {
@@ -50,11 +53,24 @@ button:not(:disabled):not(.disabled):hover, .button:not(.disabled):hover {
 }
 
 button:hover::before, button:hover::after, .button:hover::before, .button:hover::after {
-	background: #43A01C;
+	background: #43A01C !important;
 }
 
 button:disabled, button.disabled, .button.disabled {
 	background: #757575;
 	border-color: #757575;
 	color: #B2B2B2;
+}
+
+button.dark, .button.dark {
+	background: #3A3A3A;
+	color: #FFFFFF;
+	border-top-color: #4E4E4E;
+	border-left-color: #4E4E4E;
+	border-bottom-color: #212121;
+	border-right-color: #212121;
+}
+
+button.dark::before, button.dark::after, .button.dark::before, .button.dark::after {
+	background: #373737;
 }
