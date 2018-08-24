@@ -13,6 +13,6 @@ input::placeholder {
 	color: #7F7F7F;
 }
 
-input:hover {
+input:hover:not(:disabled) {
 	outline-color: #FFFFFF;
 }

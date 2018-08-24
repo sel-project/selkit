@@ -1,0 +1,98 @@
+input[type=checkbox] {
+	display: none;
+}
+
+input[type='checkbox'] + .checkbox {
+	position: relative;
+	display: inline-block;
+	margin: 8px 6px;
+	border: 2px solid #000000;
+	width: 40px;
+	height: 20px;
+	background: #404040;
+}
+
+input[type=checkbox] + .checkbox::before {
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: 18px;
+	width: 4px;
+	height: 12px;
+	background: #7F7F7F;
+}
+
+input[type=checkbox]:checked + .checkbox {
+	background: #7F7F7F;
+}
+
+input[type=checkbox]:checked + .checkbox::before {
+	background: #404040;
+}
+
+input[type=checkbox]:not(:disabled) + .checkbox:hover {
+	border-color: #FFFFFF;
+	background: #025F00;
+}
+
+input[type=checkbox]:not(:disabled) + .checkbox:hover::before {
+	background: #037300;
+}
+
+input[type=checkbox]:checked:not(:disabled) + .checkbox:hover {
+	background: #037300;
+}
+
+input[type=checkbox]:checked:not(:disabled) + .checkbox:hover::before {
+	background: #025F00;
+}
+
+input[type=checkbox] + .checkbox .slider {
+	position: absolute;
+	top: -4px;
+	left: -6px;
+	width: 12px;
+	height: 24px;
+	background: #C6C6C6;
+	border-top: 2px solid #FFFFFF;
+	border-left: 2px solid #FFFFFF;
+	border-bottom: 2px solid #585658;
+	border-right: 2px solid #585658;
+	outline: 2px solid #000000;
+}
+
+input[type=checkbox] + .checkbox .slider::before, input[type=checkbox] + .checkbox .slider::after {
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 2px;
+	background: #C6C6C6;
+}
+
+input[type=checkbox] + .checkbox .slider::before {
+	top: -2px;
+	right: -2px;
+}
+
+input[type=checkbox] + .checkbox .slider::after {
+	bottom: -2px;
+	left: -2px;
+}
+
+input[type=checkbox]:checked + .checkbox .slider {
+	left: initial;
+	right: -4px;
+}
+
+input[type=checkbox]:not(:disabled) + .checkbox:hover .slider {
+	background: #43A01C;
+	border-top-color: #37D61E;
+	border-left-color: #37D61E;
+	border-bottom-color: #037300;
+	border-right-color: #037300;
+	outline-color: #FFFFFF;
+}
+
+input[type=checkbox]:not(:disabled) + .checkbox:hover .slider::before, input[type=checkbox]:not(:disabled) + .checkbox:hover .slider::after {
+	background: #43A01C;
+}
