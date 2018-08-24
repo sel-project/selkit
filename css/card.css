@@ -1,0 +1,144 @@
+.card-container {
+	position: relative;
+}
+
+.card {
+	position: relative;
+	margin: 6px;
+	background: #C6C6C6;
+	padding: 8px;
+}
+
+.card::before, .card::after, .card-top-left::before, .card-top-left::after, .card-bottom-left::before, .card-bottom-left::after, .card-bottom-right::before, .card-bottom-right::after, .card-top-right::before, .card-top-right::after {
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 2px;
+}
+
+.card::before {
+	top: 0;
+	left: 0;
+	background: #FFFFFF;
+}
+
+.card::after {
+	bottom: -4px;
+	right: -4px;
+	background: #000000;
+}
+
+.card-decoration {
+	position: absolute;
+}
+
+.card-top {
+	top: -6px;
+	left: 0;
+	right: 0;
+	height: 4px;
+	background: #FFFFFF;
+	border-top: 2px solid #000000;
+}
+
+.card-left {
+	top: 0;
+	left: -6px;
+	bottom: 0;
+	width: 4px;
+	background: #FFFFFF;
+	border-left: 2px solid #000000;
+}
+
+.card-bottom {
+	bottom: -6px;
+	left: 0;
+	right: 0;
+	height: 4px;
+	background: #555555;
+	border-bottom: 2px solid #000000;
+}
+
+.card-right {
+	top: 0;
+	right: -6px;
+	bottom: 0;
+	width: 4px;
+	background: #555555;
+	border-right: 2px solid #000000;
+}
+
+.card-top-left, .card-bottom-left, .card-bottom-right, .card-top-right {
+	width: 2px;
+	height: 2px;
+}
+
+.card-top-left::before, .card-top-left::after, .card-bottom-left::before, .card-bottom-left::after, .card-bottom-right::before, .card-bottom-right::after, .card-top-right::before, .card-top-right::after {
+	background: #000000;
+}
+
+.card-top-left {
+	top: -2px;
+	left: -2px;
+	background: #FFFFFF;
+}
+
+.card-top-left::before {
+	top: 0;
+	left: -2px;
+}
+
+.card-top-left::after {
+	top: -2px;
+	left: 0;
+}
+
+.card-bottom-left {
+	bottom: -2px;
+	left: -2px;
+	background: #555555;
+}
+
+.card-bottom-left::before {
+	top: 0;
+	left: -2px;
+}
+
+.card-bottom-left::after {
+	top: 2px;
+	left: 0;
+}
+
+.card-bottom-right {
+	bottom: -4px;
+	right: -4px;
+	width: 6px;
+	height: 6px;	
+	background: #555555;
+}
+
+.card-bottom-right::before {
+	top: 2px;
+	right: -2px;
+}
+
+.card-bottom-right::after {
+	top: 6px;
+	right: 2px;
+}
+
+.card-top-right {
+	top: -2px;
+	right: -2px;
+	background: #C6C6C6;
+}
+
+.card-top-right::before {
+	top: 0;
+	right: -2px;
+}
+
+.card-top-right::after {
+	top: -2px;
+	right: 0;
+}
