@@ -6,6 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="css/button.css" />
 		<link rel="stylesheet" type="text/css" href="css/checkbox.css" />
 		<link rel="stylesheet" type="text/css" href="css/input.css" />
+		<link rel="stylesheet" type="text/css" href="css/radio.css" />
 		<script src="script.js"></script>
 		<style>
 			body {
@@ -64,6 +65,10 @@
 				<input type="text" value="Disabled" disabled />
 			</div>
 			<div class="row">
+				<code>&lt;input type="password" /&gt;</code>
+				<input type="password" />
+			</div>
+			<div class="row">
 				<code>&lt;input type="checkbox" /&gt;</code>
 				<input type="checkbox" />
 			</div>
@@ -74,6 +79,14 @@
 			<div class="row">
 				<code>&lt;input type="checkbox" disabled /&gt;</code>
 				<input type="checkbox" disabled />
+			</div>
+			<div class="row">
+				<code>&lt;input type="radio" /&gt;</code>
+				<form>
+					<input type="radio" name="radio" checked />
+					<input type="radio" name="radio" />
+					<input type="radio" name="radio" />
+				</form>
 			</div>
 		</div>
 	</body>

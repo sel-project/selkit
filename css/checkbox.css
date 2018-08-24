@@ -2,7 +2,7 @@ input[type=checkbox] {
 	display: none;
 }
 
-input[type='checkbox'] + .checkbox {
+input[type=checkbox] + .checkbox {
 	position: relative;
 	display: inline-block;
 	margin: 6px 4px;

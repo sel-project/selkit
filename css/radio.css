@@ -1,0 +1,32 @@
+input[type=radio] {
+	display: none;
+}
+
+input[type=radio] + .radio {
+	position: relative;
+	display: inline-block;
+	border: 2px solid #000000;
+	width: 16px;
+	height: 16px;
+	background: #585658;
+}
+
+input[type=radio] + .radio:hover {
+	border-color: #FFFFFF;
+}
+
+input[type=radio]:checked + .radio:not(:hover) {
+	width: 8px;
+	height: 8px;
+	border: 6px solid #FFFFFF;
+}
+
+input[type=radio]:checked + .radio:hover::before {
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 8px;
+	height: 8px;
+	background: #FFFFFF;
+}
