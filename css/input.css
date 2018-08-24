@@ -1,6 +1,7 @@
 input {
 	background: #5E5E5E;
 	color: #FFFFFF;
+	font-size: 16px;
 	border: 0;
 	border-top: 2px solid #464446;
 	border-bottom: 2px solid #B2B2B2;
@@ -11,6 +12,10 @@ input {
 
 input::placeholder {
 	color: #7F7F7F;
+}
+
+input:disabled {
+	color: #ACACAC;
 }
 
 input:hover:not(:disabled) {
