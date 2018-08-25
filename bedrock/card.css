@@ -1,7 +1,3 @@
-.card-container {
-	position: relative;
-}
-
 .card {
 	position: relative;
 	margin: 6px;
@@ -9,7 +5,9 @@
 	padding: 8px;
 }
 
-.card::before, .card::after, .card-top-left::before, .card-top-left::after, .card-bottom-left::before, .card-bottom-left::after, .card-bottom-right::before, .card-bottom-right::after, .card-top-right::before, .card-top-right::after {
+.card::before, .card::after, .card-top-left::before, .card-top-left::after, .card-bottom-left::before, .card-bottom-left::after, .card-bottom-right::before,
+.card-bottom-right::after, .card-top-right::before, .card-top-right::after, .card > ul.tabs > li::before, .card > ul.tabs > li > .card-left::before,
+.card > ul.tabs > li.selected > .card-right::before, .card > ul.tabs > li.selected > .card-left::after {
 	content: '';
 	position: absolute;
 	width: 2px;
@@ -170,4 +168,64 @@
 	top: -2px;
 	right: -3px;
 	width: 3px;
+}
+
+.card > ul.tabs {
+	position: absolute;
+	top: -68px;
+	left: 0;
+	padding: 0;
+}
+
+.card > ul.tabs > li {
+	display: inline-block;
+	position: relative;
+	padding: 12px;
+	background: #8B8B8B;
+	color: #4C4C4C;
+}
+
+.card > ul.tabs > li::before {
+	top: 0;
+	left: 0;
+	background: #FFFFFF;
+}
+
+.card > ul.tabs > li.selected {
+	background: #C6C6C6;
+	z-index: 1;
+}
+
+.card > ul.tabs > li > .card-left::before {
+	bottom: -2px;
+	left: 0;
+	background: #FFFFFF;
+}
+
+.card > ul.tabs > li.selected::after {
+	content: '';
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+	right: 0;
+	height: 4px;
+	background: #C6C6C6;
+}
+
+.card > ul.tabs > li.selected > .card-right::before {
+	bottom: -2px;
+	left: 0;
+	background: #555555;
+}
+
+.card > ul.tabs > li.selected > .card-left::before {
+	bottom: -4px;
+	width: 4px;
+	height: 4px;
+}
+
+.card > ul.tabs > li.selected > .card-left::after {
+	bottom: -6px;
+	right: -2px;
+	background: #C6C6C6;
 }

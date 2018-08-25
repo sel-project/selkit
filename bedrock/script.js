@@ -23,6 +23,14 @@ window.addEventListener("load", function(){
 		value.appendChild(create("div", "card-decoration card-top-right"));
 	});
 	
+	each(".card > ul.tabs > li", function(value){
+		value.appendChild(create("div", "card-decoration card-top"));
+		value.appendChild(create("div", "card-decoration card-left"));
+		value.appendChild(create("div", "card-decoration card-right"));
+		value.appendChild(create("div", "card-decoration card-top-left"));
+		value.appendChild(create("div", "card-decoration card-top-right"));
+	});
+	
 });
 
 function create(type, classes, html) {
