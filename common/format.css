@@ -1,0 +1,127 @@
+.black {
+	color: #000000;
+}
+
+.dark-blue {
+	color: #0000AA;
+}
+
+.dark-green {
+	color: #00AA00;
+}
+
+.dark-aqua {
+	color: #00AAAA;
+}
+
+.dark-red {
+	color: #AA0000;
+}
+
+.dark-purple {
+	color: #AA00AA;
+}
+
+.gold {
+	color: #FFAA00;
+}
+
+.gray {
+	color: #AAAAAA;
+}
+
+.dark-gray {
+	color: #555555;
+}
+
+.blue {
+	color: #5555FF;
+}
+
+.green {
+	color: #55FF55;
+}
+
+.aqua {
+	color: #55FFFF;
+}
+
+.red {
+	color: #FF5555;
+}
+
+.light-purple {
+	color: #FF55FF;
+}
+
+.yellow {
+	color: #FFFF55;
+}
+
+.white {
+	color: #FFFFFF;
+}
+
+.black.shadow {
+	text-shadow: .125em .125em #000000;
+}
+
+.dark-blue.shadow {
+	text-shadow: .125em .125em #00002A;
+}
+
+.dark-green.shadow {
+	text-shadow: .125em .125em #002A00;
+}
+
+.dark-aqua.shadow {
+	text-shadow: .125em .125em #002A2A;
+}
+
+.dark-red.shadow {
+	text-shadow: .125em .125em #2A0000;
+}
+
+.dark-purple.shadow {
+	text-shadow: .125em .125em #2A002A;
+}
+
+.gold.shadow {
+	text-shadow: .125em .125em #2A2A00;
+}
+
+.gray.shadow {
+	text-shadow: .125em .125em #2A2A2A;
+}
+
+.dark-gray.shadow {
+	text-shadow: .125em .125em #151515;
+}
+
+.blue.shadow {
+	text-shadow: .125em .125em #15153F;
+}
+
+.green.shadow {
+	text-shadow: .125em .125em #153F15;
+}
+
+.aqua.shadow {
+	text-shadow: .125em .125em #153F3F;
+}
+
+.red.shadow {
+	text-shadow: .125em .125em #3F1515;
+}
+
+.light-purple.shadow {
+	text-shadow: .125em .125em #3F153F;
+}
+
+.yellow.shadow {
+	text-shadow: .125em .125em #3F3F15;
+}
+
+.white.shadow {
+	text-shadow: .125em .125em #3F3F3F;
+}
