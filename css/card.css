@@ -142,3 +142,32 @@
 	top: -2px;
 	right: 0;
 }
+
+.card > .content {
+	position: relative;
+	margin-top: 8px;
+	padding: 4px;
+	border-top: 2px solid #393939;
+	border-left: 2px solid #393939;
+	border-bottom: 2px solid #FFFFFF;
+	border-right: 3px solid #FFFFFF;
+}
+
+.card > .content::before, .card > .content::after {
+	content: '';
+	position: absolute;
+	height: 2px;
+	background: #6B6B6B;
+}
+
+.card > .content::before {
+	bottom: -2px;
+	left: -2px;
+	width: 2px;
+}
+
+.card > .content::after {
+	top: -2px;
+	right: -3px;
+	width: 3px;
+}
