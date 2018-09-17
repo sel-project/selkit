@@ -16,9 +16,6 @@
 				font-family: Minecraft, Monospace;
 				color: white;
 			}
-			button, input {
-				font-family: Minecraft, Monospace;
-			}
 			.row + .row {
 				margin-top: 30px;
 			}
@@ -30,64 +27,64 @@
 	</head>
 	<body>
 		<h1>selkit</h1>
-		<h3>sel-project's CSS for Minecraft websites.</h3>
+		<h3>Pixel perfect CSS for Minecraft websites.</h3>
 		<hr>
 		<h4>Examples</h4>
 		<div class="row">
 			<h5>Buttons</h5>
 			<div class="row">
 				<code>&lt;button&gt;Button&lt;/button&gt;</code>
-				<button>Button</button>
+				<button class="bedrock">Button</button>
 			</div>
 			<div class="row">
 				<code>&lt;button disabled&gt;Button&lt;/button&gt;</code>
-				<button disabled>Button</button>
+				<button class="bedrock" disabled>Button</button>
 			</div>
 			<div class="row">
 				<code>&lt;button class="selected"&gt;Button&lt;/button&gt;</code>
-				<button class="selected">Button</button>
+				<button class="bedrock selected">Button</button>
 			</div>
 			<div class="row">
 				<code>&lt;button class="dark"&gt;Button&lt;/button&gt;</code>
-				<button class="dark">Button</button>
+				<button class="bedrock dark">Button</button>
 			</div>
 		</div>
 		<div class="row">
 			<h5>Inputs</h5>
 			<div class="row">
 				<code>&lt;input type="text" /&gt;</code>
-				<input type="text" />
+				<input class="bedrock" type="text" />
 			</div>
 			<div class="row">
 				<code>&lt;input type="text" placeholder="With a placeholder" /&gt;</code>
-				<input type="text" placeholder="With a placeholder" />
+				<input class="bedrock" type="text" placeholder="With a placeholder" />
 			</div>
 			<div class="row">
 				<code>&lt;input type="text" value="Disabled" disabled /&gt;</code>
-				<input type="text" value="Disabled" disabled />
+				<input class="bedrock" type="text" value="Disabled" disabled />
 			</div>
 			<div class="row">
 				<code>&lt;input type="password" /&gt;</code>
-				<input type="password" />
+				<input class="bedrock" type="password" />
 			</div>
 			<div class="row">
 				<code>&lt;input type="checkbox" /&gt;</code>
-				<input type="checkbox" />
+				<input class="bedrock" type="checkbox" />
 			</div>
 			<div class="row">
 				<code>&lt;input type="checkbox" checked /&gt;</code>
-				<input type="checkbox" checked />
+				<input class="bedrock" type="checkbox" checked />
 			</div>
 			<div class="row">
 				<code>&lt;input type="checkbox" disabled /&gt;</code>
-				<input type="checkbox" disabled />
+				<input class="bedrock" type="checkbox" disabled />
 			</div>
 			<div class="row">
 				<code>&lt;input type="radio" /&gt;</code>
 				<form>
-					<input type="radio" name="radio" checked />
-					<input type="radio" name="radio" />
-					<input type="radio" name="radio" />
+					<input class="bedrock" type="radio" name="radio" checked />
+					<input class="bedrock" type="radio" name="radio" />
+					<input class="bedrock" type="radio" name="radio" />
 				</form>
 			</div>
 		</div>

@@ -178,6 +178,7 @@
 }
 
 .card > ul.tabs > li {
+	font-family: 'Minecraft';
 	display: inline-block;
 	position: relative;
 	padding: 12px;

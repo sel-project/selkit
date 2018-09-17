@@ -1,8 +1,8 @@
-input[type=checkbox] {
+input[type=checkbox].bedrock {
 	display: none;
 }
 
-input[type=checkbox] + .checkbox {
+input[type=checkbox].bedrock + .checkbox {
 	position: relative;
 	display: inline-block;
 	margin: 4px 6px;
@@ -12,7 +12,7 @@ input[type=checkbox] + .checkbox {
 	background: #404040;
 }
 
-input[type=checkbox] + .checkbox::before {
+input[type=checkbox].bedrock + .checkbox::before {
 	content: '';
 	position: absolute;
 	top: 4px;
@@ -22,32 +22,32 @@ input[type=checkbox] + .checkbox::before {
 	background: #7F7F7F;
 }
 
-input[type=checkbox]:checked + .checkbox {
+input[type=checkbox].bedrock:checked + .checkbox {
 	background: #7F7F7F;
 }
 
-input[type=checkbox]:checked + .checkbox::before {
+input[type=checkbox].bedrock:checked + .checkbox::before {
 	background: #404040;
 }
 
-input[type=checkbox]:not(:disabled) + .checkbox:hover {
+input[type=checkbox].bedrock:not(:disabled) + .checkbox:hover {
 	border-color: #FFFFFF;
 	background: #025F00;
 }
 
-input[type=checkbox]:not(:disabled) + .checkbox:hover::before {
+input[type=checkbox].bedrock:not(:disabled) + .checkbox:hover::before {
 	background: #037300;
 }
 
-input[type=checkbox]:checked:not(:disabled) + .checkbox:hover {
+input[type=checkbox].bedrock:checked:not(:disabled) + .checkbox:hover {
 	background: #037300;
 }
 
-input[type=checkbox]:checked:not(:disabled) + .checkbox:hover::before {
+input[type=checkbox].bedrock:checked:not(:disabled) + .checkbox:hover::before {
 	background: #025F00;
 }
 
-input[type=checkbox] + .checkbox .slider {
+input[type=checkbox].bedrock + .checkbox .slider {
 	position: absolute;
 	top: -4px;
 	left: -6px;
@@ -61,7 +61,7 @@ input[type=checkbox] + .checkbox .slider {
 	outline: 2px solid #000000;
 }
 
-input[type=checkbox] + .checkbox .slider::before, input[type=checkbox] + .checkbox .slider::after {
+input[type=checkbox].bedrock + .checkbox .slider::before, input[type=checkbox] + .checkbox .slider::after {
 	content: '';
 	position: absolute;
 	width: 2px;
@@ -69,22 +69,22 @@ input[type=checkbox] + .checkbox .slider::before, input[type=checkbox] + .checkb
 	background: #C6C6C6;
 }
 
-input[type=checkbox] + .checkbox .slider::before {
+input[type=checkbox].bedrock + .checkbox .slider::before {
 	top: -2px;
 	right: -2px;
 }
 
-input[type=checkbox] + .checkbox .slider::after {
+input[type=checkbox].bedrock + .checkbox .slider::after {
 	bottom: -2px;
 	left: -2px;
 }
 
-input[type=checkbox]:checked + .checkbox .slider {
+input[type=checkbox].bedrock:checked + .checkbox .slider {
 	left: initial;
 	right: -4px;
 }
 
-input[type=checkbox]:not(:disabled) + .checkbox:hover .slider {
+input[type=checkbox].bedrock:not(:disabled) + .checkbox:hover .slider {
 	background: #43A01C;
 	border-top-color: #37D61E;
 	border-left-color: #37D61E;
@@ -93,6 +93,6 @@ input[type=checkbox]:not(:disabled) + .checkbox:hover .slider {
 	outline-color: #FFFFFF;
 }
 
-input[type=checkbox]:not(:disabled) + .checkbox:hover .slider::before, input[type=checkbox]:not(:disabled) + .checkbox:hover .slider::after {
+input[type=checkbox].bedrock:not(:disabled) + .checkbox:hover .slider::before, input[type=checkbox]:not(:disabled) + .checkbox:hover .slider::after {
 	background: #43A01C;
 }

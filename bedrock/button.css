@@ -1,4 +1,5 @@
-button, .button {
+button.bedrock, .bedrock-btn {
+	font-family: 'Minecraft';
 	position: relative;
 	display: inline-block;
 	background: #C6C6C6;
@@ -13,28 +14,28 @@ button, .button {
 	outline: 2px solid #131313;
 }
 
-button:not(:disabled):not(.disabled)::before, button:not(:disabled):not(.disabled)::after, .button:not(.disabled)::before, .button:not(.disabled)::after {
+button.bedrock:not(:disabled):not(.disabled)::before, button.bedrock:not(:disabled):not(.disabled)::after, .bedrock-btn:not(.disabled)::before, .bedrock-btn:not(.disabled)::after {
 	content: '';
 	position: absolute;
 	width: 2px;
 	height: 2px;
 }
 
-button:not(.dark)::before, button:not(.dark)::after, .button:not(.dark)::before, .button:not(.dark)::after {
+button.bedrock:not(.dark)::before, button.bedrock:not(.dark)::after, .bedrock-btn:not(.dark)::before, .bedrock-btn:not(.dark)::after {
 	background: #C0BFC0;
 }
 
-button::before, .button::before {
+button.bedrock::before, .bedrock-btn::before {
 	top: -2px;
 	right: -2px;
 }
 
-button::after, .button::after {
+button.bedrock::after, .bedrock-btn::after {
 	bottom: -2px;
 	left: -2px;
 }
 
-button.selected, .button.selected {
+button.bedrock.selected, .bedrock-btn.selected {
 	background: #8B8B8B;
 	border-top-color: #5A5B5A;
 	border-left-color: #5A5B5A;
@@ -42,7 +43,7 @@ button.selected, .button.selected {
 	border-right-color: #DFDFDF;
 }
 
-button:not(:disabled):not(.disabled):hover, .button:not(.disabled):hover {
+button.bedrock:not(:disabled):not(.disabled):hover, .bedrock-btn:not(.disabled):hover {
 	background: #43A01C;
 	color: #FFFFFF;
 	border-top-color: #37D61E;
@@ -52,17 +53,17 @@ button:not(:disabled):not(.disabled):hover, .button:not(.disabled):hover {
 	outline: 2px solid #FFFFFF;
 }
 
-button:hover::before, button:hover::after, .button:hover::before, .button:hover::after {
+button.bedrock:hover::before, button.bedrock:hover::after, .bedrock-btn:hover::before, .bedrock-btn:hover::after {
 	background: #43A01C !important;
 }
 
-button:disabled, button.disabled, .button.disabled {
+button.bedrock:disabled, button.bedrock.disabled, .bedrock-btn.disabled {
 	background: #757575;
 	border-color: #757575;
 	color: #B2B2B2;
 }
 
-button.dark, .button.dark {
+button.bedrock.dark, .bedrock-btn.dark {
 	background: #3A3A3A;
 	color: #FFFFFF;
 	border-top-color: #4E4E4E;
@@ -71,6 +72,6 @@ button.dark, .button.dark {
 	border-right-color: #212121;
 }
 
-button.dark::before, button.dark::after, .button.dark::before, .button.dark::after {
+button.bedrock.dark::before, button.bedrock.dark::after, .bedrock-btn.dark::before, .bedrock-btn.dark::after {
 	background: #373737;
 }

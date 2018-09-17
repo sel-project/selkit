@@ -1,4 +1,5 @@
-input {
+input.bedrock, .bedrock-input {
+	font-family: 'Minecraft';
 	background: #5E5E5E;
 	color: #FFFFFF;
 	font-size: 16px;
@@ -10,14 +11,14 @@ input {
 	caret-color: #00FF00;
 }
 
-input::placeholder {
+input.bedrock::placeholder, .bedrock-input::placeholder {
 	color: #7F7F7F;
 }
 
-input:disabled {
+input.bedrock:disabled, .bedrock-input:disabled {
 	color: #ACACAC;
 }
 
-input:hover:not(:disabled) {
+input.bedrock:hover:not(:disabled), .bedrock-input:hover:not(:disabled) {
 	outline-color: #FFFFFF;
 }
