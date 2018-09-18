@@ -12,6 +12,17 @@ window.addEventListener("load", function(){
 		value.parentNode.insertBefore(radio, value.nextSibling);
 	});
 	
+	each(".dropdown > .dropdown-toggle", function(value){
+		var menu = document.getElementById(value.dataset.toggle);
+		value.onclick = function(){
+			menu.style.display = "block";
+			menu.style.width = value.offsetWidth - 22 + "px";
+		};
+		/*window.addEventListener("click", function(){
+			menu.style.display = "";
+		});*/
+	});
+	
 	each(".card", function(value){
 		value.appendChild(create("div", "card-decoration card-top"));
 		value.appendChild(create("div", "card-decoration card-left"));

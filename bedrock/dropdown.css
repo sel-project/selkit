@@ -1,0 +1,36 @@
+.dropdown {
+	position: relative;
+}
+
+.dropdown > .dropdown-menu {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 1px;
+	padding: 8px;
+	background: #979797;
+	border-top: 2px solid #4E4C4E;
+	border-left: 2px solid #4E4C4E;
+	border-bottom: 2px solid #E3E3E3;
+	border-right: 4px solid #E3E3E3;
+	outline: 2px solid black;
+}
+
+.dropdown-menu::before, .dropdown-menu::after {
+	content: '';
+	position: absolute;
+	background: #989898;
+	height: 2px;
+}
+
+.dropdown-menu::before {
+	bottom: -2px;
+	left: -2px;
+	width: 2px;
+}
+
+.dropdown-menu::after {
+	top: -2px;
+	right: -4px;
+	width: 4px;
+}
