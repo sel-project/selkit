@@ -14,13 +14,16 @@ window.addEventListener("load", function(){
 	
 	each(".dropdown > .dropdown-toggle", function(value){
 		var menu = document.getElementById(value.dataset.toggle);
-		value.onclick = function(){
-			menu.style.display = "block";
-			menu.style.width = value.offsetWidth - 22 + "px";
-		};
-		/*window.addEventListener("click", function(){
+		function close() {
 			menu.style.display = "";
-		});*/
+			window.removeEventListener("click", close);
+		}
+		value.onclick = () => {
+			menu.style.display = "block";
+			menu.style.zIndex = "999";
+			menu.style.width = value.offsetWidth - 22 + "px";
+			setTimeout(() => window.addEventListener("click", close), 1);
+		};
 	});
 	
 	each(".card", function(value){
