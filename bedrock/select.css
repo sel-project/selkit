@@ -1,3 +1,11 @@
 select.bedrock {
 	display: none;
 }
+
+select.bedrock + .dropdown > .dropdown-menu > div > input[type=radio].bedrock + .radio {
+	margin: 5px 12px 5px -4px;
+}
+
+select.bedrock + .dropdown > .dropdown-menu > div > input[type=radio].bedrock + .radio + label {
+	vertical-align: 8px;
+}
