@@ -1,12 +1,21 @@
 window.addEventListener("load", function(){
 	
-	each("input[type=checkbox]", function(value){
+	each("button.bedrock, .bedrock-btn", function(value){
+		var outer = create("div", "bedrock-btn-outer");
+		var inner = create("div", "bedrock-btn-inner");
+		inner.innerHTML = value.innerHTML;
+		value.innerHTML = "";
+		outer.appendChild(inner);
+		value.appendChild(outer);
+	});
+	
+	each("input[type=checkbox].bedrock", function(value){
 		var checkbox = create("div", "checkbox", "<div class='slider'></div>");
 		checkbox.onclick = () => value.click();
 		value.parentNode.insertBefore(checkbox, value.nextSibling);
 	});
 	
-	each("input[type=radio]", function(value){
+	each("input[type=radio].bedrock", function(value){
 		var radio = create("div", "radio");
 		radio.onclick = () => value.click();
 		value.parentNode.insertBefore(radio, value.nextSibling);

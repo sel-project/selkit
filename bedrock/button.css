@@ -1,41 +1,54 @@
 button.bedrock, .bedrock-btn {
 	font-family: 'Minecraft';
+	font-size: 16px;
 	position: relative;
 	display: inline-block;
 	background: #C6C6C6;
-	padding: 8px;
-	margin: 1px;
-	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	border: 0;
 	color: #4C4C4C;
+	outline: 2px solid #131313;
+}
+
+button::-moz-focus-inner {
+	border: 0 !important;
+	padding: 0 !important;
+}
+
+.bedrock-btn-outer {
 	border-top: 2px solid #F7F7F7;
 	border-left: 2px solid #F7F7F7;
 	border-bottom: 2px solid #656465;
 	border-right: 2px solid #656465;
-	outline: 2px solid #131313;
 }
 
-button.bedrock:not(:disabled):not(.disabled)::before, button.bedrock:not(:disabled):not(.disabled)::after, .bedrock-btn:not(.disabled)::before, .bedrock-btn:not(.disabled)::after {
+.bedrock-btn-inner {
+	margin: 12px 18px 16px 18px;
+}
+
+button.bedrock:not(:disabled):not(.disabled) > .bedrock-btn-outer::before, button.bedrock:not(:disabled):not(.disabled) > .bedrock-btn-outer::after, .bedrock-btn:not(.disabled) > .bedrock-btn-outer::before, .bedrock-btn:not(.disabled) > .bedrock-btn-outer::after {
 	content: '';
 	position: absolute;
 	width: 2px;
 	height: 2px;
 }
 
-button.bedrock:not(.dark)::before, button.bedrock:not(.dark)::after, .bedrock-btn:not(.dark)::before, .bedrock-btn:not(.dark)::after {
+button.bedrock:not(.dark) > .bedrock-btn-outer::before, button.bedrock:not(.dark) > .bedrock-btn-outer::after, .bedrock-btn:not(.dark) > .bedrock-btn-outer::before, .bedrock-btn:not(.dark) > .bedrock-btn-outer::after {
 	background: #C0BFC0;
 }
 
-button.bedrock::before, .bedrock-btn::before {
-	top: -2px;
-	right: -2px;
+button.bedrock > .bedrock-btn-outer::before, .bedrock-btn > .bedrock-btn-outer::before {
+	top: 0;
+	right: 0;
 }
 
-button.bedrock::after, .bedrock-btn::after {
-	bottom: -2px;
-	left: -2px;
+button.bedrock > .bedrock-btn-outer::after, .bedrock-btn > .bedrock-btn-outer::after {
+	bottom: 0;
+	left: 0;
 }
 
-button.bedrock.selected, .bedrock-btn.selected {
+button.bedrock.selected > .bedrock-btn-outer, .bedrock-btn.selected > .bedrock-btn-outer {
 	background: #8B8B8B;
 	border-top-color: #5A5B5A;
 	border-left-color: #5A5B5A;
@@ -43,7 +56,7 @@ button.bedrock.selected, .bedrock-btn.selected {
 	border-right-color: #DFDFDF;
 }
 
-button.bedrock:not(:disabled):not(.disabled):hover, .bedrock-btn:not(.disabled):hover {
+button.bedrock:not(:disabled):not(.disabled):hover > .bedrock-btn-outer, .bedrock-btn:not(.disabled):hover > .bedrock-btn-outer {
 	background: #43A01C;
 	color: #FFFFFF;
 	border-top-color: #37D61E;
@@ -53,17 +66,17 @@ button.bedrock:not(:disabled):not(.disabled):hover, .bedrock-btn:not(.disabled):
 	outline: 2px solid #FFFFFF;
 }
 
-button.bedrock:hover::before, button.bedrock:hover::after, .bedrock-btn:hover::before, .bedrock-btn:hover::after {
+button.bedrock:hover > .bedrock-btn-outer::before, button.bedrock:hover > .bedrock-btn-outer::after, .bedrock-btn:hover > .bedrock-btn-outer::before, .bedrock-btn:hover > .bedrock-btn-outer::after {
 	background: #43A01C !important;
 }
 
-button.bedrock:disabled, button.bedrock.disabled, .bedrock-btn.disabled {
+button.bedrock:disabled > .bedrock-btn-outer, button.bedrock.disabled > .bedrock-btn-outer, .bedrock-btn.disabled > .bedrock-btn-outer {
 	background: #757575;
 	border-color: #757575;
 	color: #B2B2B2;
 }
 
-button.bedrock.dark, .bedrock-btn.dark {
+button.bedrock.dark > .bedrock-btn-outer, .bedrock-btn.dark > .bedrock-btn-outer {
 	background: #3A3A3A;
 	color: #FFFFFF;
 	border-top-color: #4E4E4E;
@@ -72,6 +85,6 @@ button.bedrock.dark, .bedrock-btn.dark {
 	border-right-color: #212121;
 }
 
-button.bedrock.dark::before, button.bedrock.dark::after, .bedrock-btn.dark::before, .bedrock-btn.dark::after {
+button.bedrock.dark > .bedrock-btn-outer::before, button.bedrock.dark > .bedrock-btn-outer::after, .bedrock-btn.dark > .bedrock-btn-outer::before, .bedrock-btn.dark > .bedrock-btn-outer::after {
 	background: #373737;
 }
