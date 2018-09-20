@@ -1,0 +1,85 @@
+input[type=range].bedrock {
+	-webkit-appearance: none;
+	appearance: none;
+	background: #808080;
+	margin: 0;
+	padding: 0;
+	height: 16px;
+	outline: 0;
+	border: 2px solid black;
+}
+
+input[type=range].bedrock::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	width: 16px;
+	height: 28px;
+	background: #C6C6C6;
+	border-top: 2px solid #FFFFFF;
+	border-left: 2px solid #FFFFFF;
+	border-bottom: 2px solid #585658;
+	border-right: 2px solid #585658;
+	outline: 2px solid #000000;
+}
+
+input[type=range].bedrock::-moz-range-track {
+	background-color: transparent;
+}
+
+input[type=range].bedrock::-moz-range-thumb {
+	width: 16px;
+	height: 28px;
+	background: #C6C6C6;
+	border-top: 2px solid #FFFFFF;
+	border-left: 2px solid #FFFFFF;
+	border-bottom: 2px solid #585658;
+	border-right: 2px solid #585658;
+	border-radius: 0;
+	outline: 2px solid #000000;
+}
+
+input[type=range].bedrock + .darker-part {
+	position: absolute;
+	background: #404040;
+	height: 16px;
+	margin-top: -22px;
+}
+
+input[type=range].bedrock + .darker-part::before, input[type=range].bedrock + .darker-part::after {
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 2px;
+	background: #C6C6C6;
+}
+
+input[type=range].bedrock + .darker-part::before {
+	top: -6px;
+	left: -4px;
+}
+
+input[type=range].bedrock + .darker-part::after {
+	bottom: -6px;
+	left: -18px;
+}
+
+input[type=range].bedrock:hover {
+	border-color: #FFFFFF;
+	background: #4E8836;
+}
+
+input[type=range].bedrock:hover::-webkit-slider-thumb, input[type=range].bedrock:hover::-moz-range-thumb {
+	background: #43A01C;
+	border-top-color: #37D61E;
+	border-left-color: #37D61E;
+	border-bottom-color: #037300;
+	border-right-color: #037300;
+	outline-color: #FFFFFF;
+}
+
+input[type=range].bedrock:hover + .darker-part {
+	background: #037300;
+}
+
+input[type=range].bedrock:hover + .darker-part::before, input[type=range].bedrock:hover + .darker-part::after {
+	background: #43A01C;
+}

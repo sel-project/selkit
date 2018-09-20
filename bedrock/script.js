@@ -33,6 +33,24 @@ selkit.reloadRadio = () => {
 	
 }
 
+selkit.reloadRange = () => {
+	
+	each("Range", "input[type=range].bedrock", function(value){
+		var darker = create("div", "darker-part");
+		function updateWidth() {
+			var max = value.max ? value.max : 100;
+			var diff = max - (value.min ? value.min : 0);
+			var width = (diff - value.value) / diff * (value.offsetWidth - diff * 2);
+			darker.style.width = (value.value == max ? 0 : width - 2) + "px";
+			darker.style.marginLeft = value.offsetWidth - width + "px";
+		}
+		value.oninput = updateWidth;
+		value.parentNode.insertBefore(darker, value.nextSibling);
+		updateWidth();
+	});
+	
+}
+
 selkit.reloadDropdown = () => {
 	
 	each("Dropdown", ".dropdown > .dropdown-toggle", function(value){
@@ -125,6 +143,7 @@ selkit.reload = () => {
 	selkit.reloadButton();
 	selkit.reloadCheckbox();
 	selkit.reloadRadio();
+	selkit.reloadRange();
 	selkit.reloadDropdown();
 	selkit.reloadSelect();
 	selkit.reloadCard();
