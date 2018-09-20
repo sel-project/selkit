@@ -22,6 +22,10 @@ input[type=checkbox].bedrock + .checkbox::before {
 	background: #7F7F7F;
 }
 
+input[type=checkbox].bedrock:disabled + .checkbox, input[type=checkbox].bedrock:disabled + .checkbox + label {
+	opacity: .5;
+}
+
 input[type=checkbox].bedrock:checked + .checkbox {
 	background: #7F7F7F;
 }

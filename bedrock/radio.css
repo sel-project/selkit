@@ -11,17 +11,21 @@ input[type=radio].bedrock + .radio {
 	background: #585658;
 }
 
-input[type=radio].bedrock + .radio:hover {
+input[type=radio].bedrock:disabled + .radio, input[type=radio].bedrock:disabled + .radio + label {
+	opacity: .5;
+}
+
+input[type=radio].bedrock:not(:disabled) + .radio:hover {
 	border-color: #FFFFFF;
 }
 
-input[type=radio].bedrock:checked + .radio:not(:hover) {
+input[type=radio].bedrock:checked:not(:disabled) + .radio:not(:hover) {
 	width: 8px;
 	height: 8px;
 	border: 6px solid #FFFFFF;
 }
 
-input[type=radio].bedrock:checked + .radio:hover::before {
+input[type=radio].bedrock:checked:not(:disabled) + .radio:hover::before {
 	content: '';
 	position: absolute;
 	top: 4px;
