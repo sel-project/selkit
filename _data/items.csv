@@ -1,19 +1,25 @@
 name
 acacia-boat
 acacia-door
+acacia-sign
 apple
 armor-stand
 arrow
 baked-potato
+bamboo
 barrier
 beef
 beetroot
 beetroot-seeds
 beetroot-soup
+bell
 birch-boat
 birch-door
+birch-sign
+black-dye
 blaze-powder
 blaze-rod
+blue-dye
 bone
 bone-meal
 book
@@ -26,6 +32,7 @@ bread
 brewing-stand
 brick
 broken-elytra
+brown-dye
 bucket
 cactus-green
 cake
@@ -154,10 +161,18 @@ cooked-porkchop
 cooked-rabbit
 cooked-salmon
 cookie
+creeper-banner-pattern
+crossbow-arrow
+crossbow-firework
+crossbow-pulling-0
+crossbow-pulling-1
+crossbow-pulling-2
+crossbow-standby
 cyan-dye
 dandelion-yellow
 dark-oak-boat
 dark-oak-door
+dark-oak-sign
 diamond
 diamond-axe
 diamond-boots
@@ -196,6 +211,7 @@ fishing-rod
 fishing-rod-cast
 flint
 flint-and-steel
+flower-banner-pattern
 flower-pot
 furnace-minecart
 ghast-tear
@@ -217,6 +233,7 @@ golden-pickaxe
 golden-shovel
 golden-sword
 gray-dye
+green-dye
 gunpowder
 heart-of-the-sea
 hopper
@@ -238,6 +255,7 @@ iron-sword
 item-frame
 jungle-boat
 jungle-door
+jungle-sign
 kelp
 knowledge-book
 lapis-lazuli
@@ -263,6 +281,7 @@ melon-seeds
 melon-slice
 milk-bucket
 minecart
+mojang-banner-pattern
 mushroom-stew
 music-disc-11
 music-disc-13
@@ -284,6 +303,7 @@ nether-star
 nether-wart
 oak-boat
 oak-door
+oak-sign
 orange-dye
 painting
 paper
@@ -307,6 +327,7 @@ rabbit
 rabbit-foot
 rabbit-hide
 rabbit-stew
+red-dye
 redstone
 repeater
 rose-red
@@ -321,6 +342,7 @@ seagrass
 shears
 shulker-shell
 sign
+skull-banner-pattern
 slime-ball
 snowball
 spawn-egg
@@ -330,6 +352,7 @@ spider-eye
 splash-potion
 spruce-boat
 spruce-door
+spruce-sign
 stick
 stone-axe
 stone-hoe
@@ -340,6 +363,7 @@ string
 structure-void
 sugar
 sugar-cane
+suspicious-stew
 tipped-arrow-base
 tipped-arrow-head
 tnt-minecart
@@ -352,6 +376,7 @@ turtle-helmet
 water-bucket
 wheat
 wheat-seeds
+white-dye
 wooden-axe
 wooden-hoe
 wooden-pickaxe
@@ -359,3 +384,4 @@ wooden-shovel
 wooden-sword
 writable-book
 written-book
+yellow-dye
