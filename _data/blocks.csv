@@ -303,6 +303,7 @@ lapis-ore
 large-fern-bottom
 large-fern-top
 lava-still
+lectern-base
 lectern-base-sides
 lectern-base-top
 lectern-bottom
@@ -486,6 +487,9 @@ sand
 sandstone
 sandstone-bottom
 sandstone-top
+scaffolding-bottom
+scaffolding-side
+scaffolding-top
 sea-lantern
 sea-pickle
 seagrass
