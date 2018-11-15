@@ -98,6 +98,9 @@ carrots-stage2
 carrots-stage3
 cartography-table-front
 cartography-table-side
+cartography-table-side1
+cartography-table-side2
+cartography-table-side3
 cartography-table-top
 carved-pumpkin
 cauldron-bottom
@@ -285,6 +288,9 @@ iron-ore
 iron-trapdoor
 item-frame
 jack-o-lantern
+jigsaw-bottom
+jigsaw-side
+jigsaw-top
 jukebox-side
 jukebox-top
 jungle-door-bottom
@@ -298,6 +304,7 @@ jungle-trapdoor
 kelp
 kelp-plant
 ladder
+lantern
 lapis-block
 lapis-ore
 large-fern-bottom
@@ -495,6 +502,7 @@ sea-pickle
 seagrass
 shulker-box
 slime-block
+smithing-table-bottom
 smithing-table-front
 smithing-table-side
 smithing-table-top
