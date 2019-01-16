@@ -93,6 +93,8 @@ cake-inner
 cake-side
 cake-top
 campfire-fire
+campfire-log
+campfire-log-lit
 campfire-side
 campfire-top
 campfire-top-on
@@ -139,6 +141,11 @@ command-block-front
 command-block-side
 comparator
 comparator-on
+composter-bottom
+composter-compost
+composter-ready
+composter-side
+composter-top
 conduit
 cornflower
 cracked-stone-bricks
