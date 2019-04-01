@@ -1,4 +1,5 @@
 name
+3d
 acacia-boat
 acacia-door
 acacia-sign
@@ -20,6 +21,7 @@ black-dye
 blaze-powder
 blaze-rod
 blue-dye
+blue-key
 bone
 bone-meal
 book
@@ -332,6 +334,7 @@ rabbit-foot
 rabbit-hide
 rabbit-stew
 red-dye
+red-key
 redstone
 repeater
 rose-red
@@ -390,3 +393,4 @@ wooden-sword
 writable-book
 written-book
 yellow-dye
+yellow-key
