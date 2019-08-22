@@ -27,6 +27,16 @@ barrel-top
 barrel-top-open
 beacon
 bedrock
+bee-hive-bottom
+bee-hive-front
+bee-hive-front-honey
+bee-hive-side
+bee-hive-top
+bee-nest-bottom
+bee-nest-front
+bee-nest-front-honey
+bee-nest-side
+bee-nest-top
 beetroots-stage0
 beetroots-stage1
 beetroots-stage2
@@ -590,6 +600,7 @@ turtle-egg-slightly-cracked
 turtle-egg-very-cracked
 vine
 water-still
+wax-block
 wet-sponge
 wheat-stage0
 wheat-stage1
