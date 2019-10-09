@@ -38,6 +38,10 @@ bee-nest-front
 bee-nest-front-honey
 bee-nest-side
 bee-nest-top
+beehive-end
+beehive-front
+beehive-front-honey
+beehive-side
 beetroots-stage0
 beetroots-stage1
 beetroots-stage2
@@ -296,6 +300,10 @@ grindstone-round
 grindstone-side
 hay-block-side
 hay-block-top
+honey-block-bottom
+honey-block-side
+honey-block-top
+honeycomb-block
 hopper-inside
 hopper-outside
 hopper-top
